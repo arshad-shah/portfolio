@@ -17,8 +17,6 @@ export default function BackTtButton() {
 		};
 	}, []);
 
-	const buttonColor = useColorModeValue("blackAlpha.300", "whiteAlpha.300");
-
 	return (
 		<>
 			{scrollPosition > 300 && (
@@ -29,7 +27,6 @@ export default function BackTtButton() {
 						aria-label={"Back to Top"}
 						position="fixed"
 						bottom="90px"
-						bg={buttonColor}
 						right={["15px"]}
 						zIndex={1}
 						alignItems={"center"}

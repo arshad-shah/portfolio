@@ -10,6 +10,7 @@ import {
 import { FiMoon, FiSun } from "react-icons/fi";
 import DesktopMenu from "./menu/Desktop";
 import MobileMenu from "./menu/Mobile";
+import { HyperThemeEditor } from '@hypertheme-editor-pro/chakra-ui'
 
 export default function Header() {
 	const isMobile = useBreakpointValue({ base: true, md: false });
@@ -23,7 +24,7 @@ export default function Header() {
 	return (
 		<>
 			<Box
-				bg={useColorModeValue("gray.300", "gray.900")}
+
 				px={4}
 				zIndex={11}
 				position={"fixed"}
@@ -49,6 +50,7 @@ export default function Header() {
 								<Icon as={FiSun} />
 							)}
 						</IconButton>
+						{import.meta.env.DEV && <HyperThemeEditor label="Edit Theme" />}
 					</Box>
 				</Flex>
 			</Box>

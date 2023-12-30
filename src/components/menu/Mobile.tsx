@@ -17,16 +17,11 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ Links }: MobileMenuProps) {
 	const newLinks = [...Links, "Resume"];
-	const iconBackgroundColour = useColorModeValue("gray.100", "gray.700");
-	const linkHoverColor = useColorModeValue("gray.200", "gray.700");
 	return (
 		<Menu autoSelect={false} closeOnSelect isLazy>
 			{({ isOpen }) => (
 				<>
 					<MenuButton
-						_active={{
-							bg: iconBackgroundColour,
-						}}
 						as={IconButton}
 						size={"lg"}
 						fontSize={"24px"}
@@ -54,7 +49,6 @@ export default function MobileMenu({ Links }: MobileMenuProps) {
 									href={`#${link.toLowerCase().replace(" ", "")}`}
 									_hover={{
 										textDecoration: "none",
-										bg: linkHoverColor,
 										fontWeight: "bold",
 									}}
 								>

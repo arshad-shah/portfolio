@@ -7,7 +7,6 @@ const Footer = () => {
 
 	return (
 		<Box
-			bg={useColorModeValue("gray.300", "gray.900")}
 			p={4}
 			textAlign="center"
 			mt={8}

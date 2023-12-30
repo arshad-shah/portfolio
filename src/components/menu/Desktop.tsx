@@ -39,7 +39,6 @@ export default function DesktopMenu({ Links }: DesktopMenuProps) {
 					))}
 					<Button
 						rightIcon={<Icon as={FaDownload} fontSize={24} />}
-						bg={useColorModeValue("green.400", "green.600")}
 						size={"lg"}
 						as={Link}
 						fontSize={"20px"}
@@ -47,12 +46,10 @@ export default function DesktopMenu({ Links }: DesktopMenuProps) {
 						onClick={() => {
 							window.open(ResumePdf);
 						}}
-						color={useColorModeValue("black", "gray.200")}
 						_hover={{
 							textDecoration: "none",
 							fontWeight: "bold",
-							bg: useColorModeValue("green.200", "green.300"),
-							color: useColorModeValue("black.600", "gray.800"),
+							bg: linkHoverColor,
 						}}
 					>
 						Resume

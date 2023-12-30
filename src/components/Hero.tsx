@@ -46,7 +46,6 @@ export default function Hero() {
 						</Text>
 					</Box>
 					<Text
-						color={useColorModeValue("gray.600", "gray.200")}
 						fontSize={"20px"}
 					>
 						Associate Software Engineer

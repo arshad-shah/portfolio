@@ -11,7 +11,6 @@ interface SocialButtonProps {
 const SocialButton = ({ children, label, href }: SocialButtonProps) => {
 	return (
 		<IconButton
-			bg={useColorModeValue("blackAlpha.300", "whiteAlpha.300")}
 			cursor={"pointer"}
 			as={"a"}
 			href={href}
@@ -22,10 +21,6 @@ const SocialButton = ({ children, label, href }: SocialButtonProps) => {
 			aria-label={label}
 			size={"lg"}
 			fontSize={"24px"}
-			_hover={{
-				bg: useColorModeValue("blackAlpha.600", "whiteAlpha.700"),
-				color: useColorModeValue("whiteAlpha.900", "blackAlpha.900"),
-			}}
 		>
 			{children}
 		</IconButton>
